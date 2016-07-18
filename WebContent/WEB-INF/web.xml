@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Servlets-JSPs-Project</display-name>
+  <servlet>
+    <servlet-name>xmlServletHelloWorld</servlet-name>
+    <servlet-class>com.softpath.servlets.HelloWorldFromServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>xmlServletHelloWorld</servlet-name>
+    <url-pattern>/Pepito</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>xmlServletSuma</servlet-name>
+    <servlet-class>com.softpath.servlets.Suma</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>xmlServletSuma</servlet-name>
+    <url-pattern>/MiraHagoSumas</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InitParamServlet</servlet-name>
+    <servlet-class>com.softpath.servlets.SessionServlet</servlet-class>
+    <init-param>
+      <param-name>TakingFromXML</param-name>
+      <param-value>World from Init in XML file</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitParamServlet</servlet-name>
+    <url-pattern>/InitParamServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>InitXMLCalc</servlet-name>
+  	<servlet-class>com.softpath.servlets.InitCalculadora</servlet-class>
+  	<init-param>
+  		<param-name>numero1</param-name>
+  		<param-value>4</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>numero2</param-name>
+  		<param-value>6</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitXMLCalc</servlet-name>
+    <url-pattern>/InitXMLCalc</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
